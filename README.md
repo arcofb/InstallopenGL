@@ -1,3 +1,2 @@
-# InstallopenGL
-# For Linux OS
-# By Arco Friendi Bancin
+# InstallopenGL For Linux OS
+  By Arco
