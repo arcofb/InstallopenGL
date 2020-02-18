@@ -1,2 +1,2 @@
-# InstallopenGL For Linux OS
+# InstallopenGL For Linux OS and Windows OS
   By Arco
