@@ -1,0 +1,15 @@
+1. Open Terminal
+2. Ketikkan "su"
+3. Masukkan sandi root anda
+4. Ketikkan satu persatu perintah berikut:
+   1. apt-get update
+   2. apt-get install freeglut3
+   3. apt-get install freeglut3-dev
+   4. apt-get install binutils-gold
+   5. apt-get install g++ cmake
+   6. apt-get install libglew-dev
+   7. apt-get install g++
+   8. apt-get install mesa-common-dev
+   9. apt-get install build-essential
+   10. apt-get install libglew1.5-dev libglm-dev
+5. Selesai
