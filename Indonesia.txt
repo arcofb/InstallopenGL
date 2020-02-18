@@ -1,4 +1,4 @@
-1. Open Terminal
+1. Buka Terminal
 2. Ketikkan "su"
 3. Masukkan sandi root anda
 4. Ketikkan satu persatu perintah berikut:
