@@ -1,0 +1,31 @@
+1. Download mingw -> https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-posix/sjlj/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0.7z/download
+2. Extrack ke C:\
+3. Tambahkan path ke environtment variabel caranya:
+	- Copy C:\ming64\bin\
+	- Klik kanan "This Computer" -> Properties -> Advanced System Settings -> Environtmen Variabels -> pilih path -> edit -> new -> pastekan hasil copyan tdi
+	- oke
+	Selanjutnya copy C:\mingw64\x86_64-w64-mingw32\bin\ dan lakukan seperti diatas jga
+4. Untuk cek mingw udh terinstall : buka cmd -> ketik "g++ --version"
+5. Jika tidak error berrti sudah terinstall
+6. Download CMAKE -> https://github.com/Kitware/CMake/releases/download/v3.17.0-rc1/cmake-3.17.0-rc1-win64-x64.msi
+7. Instal seperti biasa
+8. copy C:\Program Files\CMake\bin\ lalu letakkan ke environtment variabel, sama seperti mingw tadi
+9. Cek dengan ketik "cmake --version" di cmd
+10. Download freeglut -> https://sourceforge.net/projects/freeglut/files/freeglut/3.0.0/freeglut-3.0.0.tar.gz/download?use_mirror=excellmedia&download=
+11. Extrack D:\   biar lebih mudah diakses (pastikan membuka winrar dengan "run as administrator" agar tidak error saat meng extrack)
+12. buka cmd, ketikkan "D:" lalu "cd freeglut-3.0.0"
+13. ketikkan "cmake -G "MinGW Makefiles" -S . -B . -DCMAKE_INSTALL_PREFIX=C:\mingw64\x86_64-w64-mingw32"
+14. ketikkan "mingw32-make all"
+15. ketikkan "mingw32-make install"
+16. Download glew -> https://sourceforge.net/projects/glew/files/glew/2.1.0/glew-2.1.0.zip/download
+17. Extrack D:\   biar lebih mudah diakses
+18. buka cmd, ketikkan "D:" lalu "cd glew-2.1.0"
+19. ketikkan "mingw32-make all"
+20. ketikkan "mingw32-make install"
+21. Cobalah buka vscode dan buat program c++ opengl, kemudian compile dengan cara buka terminal 
+	lalu masuk ke directory dimana file c++ berada, lalu ketikkan "g++ -Wall -o <namafileterserah> <namafile.cpp> -lopengl32 -lglew32 -lfreeglut -lglu32"
+	
+	contoh	=> g++ -Wall -o Setup contoh.cpp -lopengl32 -lglew32 -lfreeglut -lglu32
+				lalu ketikkan ./Setup
+				
+Done!
