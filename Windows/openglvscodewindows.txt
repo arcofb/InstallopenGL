@@ -20,6 +20,8 @@
 16. Download glew -> https://sourceforge.net/projects/glew/files/glew/2.1.0/glew-2.1.0.zip/download
 17. Extrack D:\   biar lebih mudah diakses
 18. buka cmd, ketikkan "D:" lalu "cd glew-2.1.0"
+19. ketikkan "cd build", lalu "cd cmake"
+20. ketikkan "cmake -G "MinGW Makefiles" -S . -B . -DCMAKE_INSTALL_PREFIX=C:\mingw64\x86_64-w64-mingw32"
 19. ketikkan "mingw32-make all"
 20. ketikkan "mingw32-make install"
 21. Cobalah buka vscode dan buat program c++ opengl, kemudian compile dengan cara buka terminal 
